@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto 1fr;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* header, profile, AVA icon, settings button, langauge button, greetings */
+.header {
+    grid-column: 1 / 3;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 24px;
+}
+
+.welcomeMessage {
+    font-size: 40px;
+    justify-content: flex-start; /* aligns the content to the left */
+    align-items: center;
+    text-align: left;
+}
+
+.AVAicon {
+    width: 100px;
+    height: 50px;
+    background-color: #7ec8e3;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #7ec8e3;
+    border-radius: 50%;
+}
+
+.header-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.setting {
+    width: 100px;
+    height: 50px;
+    background-color: #7ec8e3;
+    border-radius: 15px;
+}
+
+.language {
+    width: 100px;
+    height: 50px;
+    background-color: #7ec8e3;
+    border-radius: 15px;
+}
+
+/* talk box */
+.sidebar {
+    background-color: #98fb98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.talk-button {
+    background-color: #8fbc8f;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* text chat window */
+.chat-window {
+    background-color: #eaf4fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.message {
+    display: flex;
+    margin: 10px 0;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: #7ec8e3;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.bubble {
+    background-color: #e6e6fa;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 60%;
+}
+
+.right .bubble {
+    background-color: #add8e6;
+}
+
+/* user message */
+.user-message {
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-box {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #add8e6;
+    border-radius: 10px 0 0 10px;
+}
+
+.enter-button {
+    background-color: #add8e6;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}

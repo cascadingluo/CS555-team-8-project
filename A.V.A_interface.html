@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A.V.A Interface</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='A.V.A_styling.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header Section -->
+            <header class="header">
+                <div class="AVAicon"></div>
+                <h1 class="welcomeMessage">Good Evening, &lt;user&gt;</h1>
+                <div class="header-icons">
+                    <div class="language"></div>
+                    <div class="setting"></div>
+                </div>
+            </header>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <button class="talk-button">Click me if you want to talk instead!</button>
+            </aside>
+
+            <!-- chat window-->
+            <main class="chat-window">
+                <div class="message left">
+                    <div class="profile-pic">  </div>
+                    <div class="bubble"> (sample) Hi &lt;user&gt;, how are you today?</div>
+                </div>
+                <div class="message right">
+                    <div class="bubble"> (sample) I am doing well, and you?</div>
+                </div>
+                <div class="message left">
+                    <div class="profile-pic">  </div>
+                    <div class="bubble"> (sample) I am well. How did your day go?</div>
+                </div>
+
+                <!-- user message -->
+                <div class="user-message">
+                    <input type="text" placeholder="click on me if you would rather text :)" class="input-box">
+                    <button class="enter-button">Enter</button>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
