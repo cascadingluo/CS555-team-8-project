@@ -1,7 +1,6 @@
 // backend/server.js
 import dotenv from "dotenv";
 import router from './routes/user.routes.js';
-import chatRoutes from './routes/chat.routes.js';
 import express from 'express';
 import cors from 'cors';
 import { GoogleGenerativeAI } from '@google/generative-ai';
@@ -14,7 +13,6 @@ app.use(express.json());
 app.use(cors());
 
 app.use("/api/user", router);
-app.use('/api/chat', chatRoutes);
 
 dotenv.config();
 

@@ -114,6 +114,9 @@
             <div class="bubble">${data.reply}</div>`;
           document.querySelector('.chat-window').prepend(botMessage); // Adds to the top
 
+          const utterance = new SpeechSynthesisUtterance(data.reply); 
+          window.speechSynthesis.speak(utterance);
+
         // Saving History in chat_history array in database. 
         fetch('/save_history', {
             method: 'POST', 
