@@ -22,8 +22,9 @@ genai.configure(api_key=os.getenv("API_KEY"))
 
 users_collection = db.users 
 
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
+#model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 #model = genai.GenerativeModel(model_name="tunedModels/avamentalhealthft1-23b1qsi4o8g0")
+model = genai.GenerativeModel(model_name="tunedModels/mentalhealthchatbot-7mrtrsg0fib1")
 chat_object = model.start_chat()
 
 @app.route('/chatbot')
